@@ -1,0 +1,16 @@
+<footer class="g-footer">
+
+  <section>{{ site.title }} ©
+  {% assign current = "now" | date: "%Y" | plus: 0%}
+  {% unless site.footer.since and site.footer.since == current %}
+    {{ site.footer.since }}
+    -
+  {% endunless %}
+  {{ current }}
+  </section>
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_uv" style="color: #a6abb2;font-size: 14px;display: block">网站访问数:<span id="busuanzi_value_site_uv"></span></span>
+
+  <section>Powered by <a href="https://weibo.com/bananaza">515Club</a> | <a href="https://weibo.com/bananaza">技术支持</a></section>
+</footer>

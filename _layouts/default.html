@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">提示:建议使用google游览器或非IE游览器访问此页面！<a target="_blank" class="alert-link" href="https://www.google.cn/chrome/">立即升级</a></div>
+<![endif]-->
+    <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
+    <div class="visible">
+      {{ content }}
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
+</body>
+</html>

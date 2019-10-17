@@ -90,10 +90,10 @@ toc: true
   @Query("select o from Users o where id=(select max(id) from Users tb_name)")
   public Users getUserById();	//例子：用自定义的命名规则查最大Id用户
 
-  @Query("select o from Employee o where o.name=?1 and o.age=?2")
+  @Query("select o from Users o where o.name=?1 and o.age=?2")
   public List<Users> query1(String name, Integer age);	//例子：查询特定名字和年龄的用户(方法1)
 
-  @Query("select o from Employee o where o.name=:name and o.age=:age")
+  @Query("select o from Users o where o.name=:name and o.age=:age")
   public List<Users> query2(@Param("name")String name,@Param("age") Integer age);	//例子：查询特定名字和年龄的用户(方法2)
 
   @Query("select o from Users o where o.name like %?1%")
@@ -195,6 +195,7 @@ toc: true
   Sort.Order order2 = new Sort.Order(Sort.Direction.ASC, "id"); 	//Id升序排列
   Sort sort = new Sort(order1);	//传入Order，关系型数据
   Pageable pageable = new PageRequest(0,5,sort);
+  //Pageable为一个接口，PageRequest是其一个实现类
 
   ~~~
 
@@ -251,6 +252,7 @@ toc: true
   };
 
   ~~~
+
 
 
 

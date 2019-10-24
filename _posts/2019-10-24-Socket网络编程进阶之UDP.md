@@ -124,7 +124,7 @@ pinned: true
   public static void main(String[] args) {
           System.out.println("UDPProvider Started");
 
-          //作为接受者，指定端口用于数据接收
+          //作为接收者，指定端口用于数据接收
           try {
               DatagramSocket ds = new DatagramSocket(20000);
 
@@ -172,7 +172,7 @@ pinned: true
           try {
               DatagramSocket ds = new DatagramSocket();
 
-              //根据发送者构建一份回送数据
+              //测试发送一份数据给接收方
               String resquestData = "HelloWorld!" ;
               byte[] resquestDataBytes = resquestData.getBytes();
               DatagramPacket requestPacket = new DatagramPacket(resquestDataBytes,
@@ -215,7 +215,7 @@ pinned: true
 * 完善后代码如下：
 
   ~~~ 
-  /**
+   /**
    * UDP 提供者，用于提供服务
    */
   public class UDPProvider {
@@ -284,9 +284,7 @@ pinned: true
 
                           ds.send(responsePacket);
                       }
-
                   }
-
               } catch (Exception ignored) {
               } finally {
                   close();
@@ -296,14 +294,12 @@ pinned: true
               System.out.println("UDPProvider Finished.");
           }
 
-
           private void close() {
               if (ds != null) {
                   ds.close();
                   ds = null;
               }
           }
-
 
           /**
            * 提供结束
@@ -312,12 +308,13 @@ pinned: true
               done = true;
               close();
           }
-
       }
-
   }
 
   ~~~
+
+
+
 
 * UDPSearcher
 
@@ -478,8 +475,7 @@ pinned: true
   }
   ~~~
 
-
-
+  ​
 
 ------
 

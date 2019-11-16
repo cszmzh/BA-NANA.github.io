@@ -288,8 +288,7 @@ toc: true
     echo ${array[*]}
     ~~~
   
-  
-    ### Shell的选择语句
+  ### Shell的选择语句
   
     * if-else语句
   
@@ -307,19 +306,19 @@ toc: true
       #if语句中，=左右要有空格，中括号左右要有空格，但赋值语句中=左右不允许有空格
       ~~~
   
-  * elif：否则（else if)
+      elif：否则（else if)
   
-    ~~~ 
-    if [ 条件1 ]
-    then
-    		语句1
-    elif [ 条件2 ]
-    then
-    		语句2
-    else
-    		语句3
-    fi
-    ~~~
+      ~~~ 
+      if [ 条件1 ]
+      then
+      		语句1
+      elif [ 条件2 ]
+      then
+      		语句2
+      else
+      		语句3
+      fi
+      ~~~
 
 
 

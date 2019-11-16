@@ -336,14 +336,14 @@ toc: true
 
 * 测试数字
 
-  | 条件              | 意义                              |
-  | ----------------- | --------------------------------- |
-  | \$num1 -eq \$num2 | 是否相等（equal）                 |
-  | \$num1 -ne \$num2 | 是否不相等（not equal）           |
-  | \$num1 -lt \$num2 | num1是否小于num2（lower than）    |
-  | \$num1 -le \$num2 | num1是否≤num2（lower or equal）   |
-  | \$num1 -gt \$num2 | num1是否大于num2（greater than）  |
-  | \$num1 -ge \$num2 | num1是否≥num2（greater or equal） |
+  | 条件               | 意义                              |
+  | ------------------ | --------------------------------- |
+  | \$num1 -eq  \$num2 | 是否相等（equal）                 |
+  | \$num1 -ne  \$num2 | 是否不相等（not equal）           |
+  | \$num1 -lt  \$num2 | num1是否小于num2（lower than）    |
+  | \$num1 -le  \$num2 | num1是否≤num2（lower or equal）   |
+  | \$num1 -gt  \$num2 | num1是否大于num2（greater than）  |
+  | \$num1 -ge  \$num2 | num1是否≥num2（greater or equal） |
 
 * 测试文件
 

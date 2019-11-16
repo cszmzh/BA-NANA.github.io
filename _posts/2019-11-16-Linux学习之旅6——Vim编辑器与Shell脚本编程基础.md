@@ -327,35 +327,35 @@ toc: true
 
 * 测试字符串
 
-  | 条件                   | 描述                                 |
-  | ---------------------- | ------------------------------------ |
-  | \$string1 = \$string2  | 两个字符串是否相等 (区分大小写)      |
-  | \$string1! = \$string2 | 两个字符串是否不相等                 |
-  | -z \$string            | 字符串是否为空 (zero)，返回布尔类型  |
-  | -n \$string            | 字符串是否不为空 (not)，返回布尔类型 |
+  | 条件                    | 描述                                 |
+  | ----------------------- | ------------------------------------ |
+  | \$string1 = \$string2   | 两个字符串是否相等 (区分大小写)      |
+  | \$string1 \!= \$string2 | 两个字符串是否不相等                 |
+  | -z \$string             | 字符串是否为空 (zero)，返回布尔类型  |
+  | -n \$string             | 字符串是否不为空 (not)，返回布尔类型 |
 
 * 测试数字
 
-  | 条件               | 意义                              |
-  | ------------------ | --------------------------------- |
-  | \$num1 -eq  \$num2 | 是否相等（equal）                 |
-  | \$num1 -ne  \$num2 | 是否不相等（not equal）           |
-  | \$num1 -lt  \$num2 | num1是否小于num2（lower than）    |
-  | \$num1 -le  \$num2 | num1是否≤num2（lower or equal）   |
-  | \$num1 -gt  \$num2 | num1是否大于num2（greater than）  |
-  | \$num1 -ge  \$num2 | num1是否≥num2（greater or equal） |
+  | 条件                | 意义                              |
+  | ------------------- | --------------------------------- |
+  | \$num1 \-eq  \$num2 | 是否相等（equal）                 |
+  | \$num1 \-ne  \$num2 | 是否不相等（not equal）           |
+  | \$num1 \-lt  \$num2 | num1是否小于num2（lower than）    |
+  | \$num1 \-le  \$num2 | num1是否≤num2（lower or equal）   |
+  | \$num1 \-gt  \$num2 | num1是否大于num2（greater than）  |
+  | \$num1 \-ge  \$num2 | num1是否≥num2（greater or equal） |
 
 * 测试文件
 
-  | 条件                | 意义                        |
-  | ------------------- | --------------------------- |
-  | -e $file            | 文件是否存在（exist）       |
-  | -d $file            | 是否为一个目录（directory） |
-  | -f $file            | 是否为一个文件（file）      |
-  | -L $file            | 是否为一个链接文件          |
-  | -r/w/x $file        | 是否可读/可写/可执行        |
-  | \$file1 -nt \$file2 | 文件file1是否比file2新      |
-  | \$file1 -ot \$file2 | 文件file1是否比file2旧      |
+  | 条件                 | 意义                        |
+  | -------------------- | --------------------------- |
+  | -e $file             | 文件是否存在（exist）       |
+  | -d $file             | 是否为一个目录（directory） |
+  | -f $file             | 是否为一个文件（file）      |
+  | -L $file             | 是否为一个链接文件          |
+  | -r/w/x $file         | 是否可读/可写/可执行        |
+  | \$file1 \-nt \$file2 | 文件file1是否比file2新      |
+  | \$file1 \-ot \$file2 | 文件file1是否比file2旧      |
 
 * 逻辑与（&&）、逻辑或（\|\|）、非（!）
 

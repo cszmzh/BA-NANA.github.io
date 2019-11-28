@@ -6,7 +6,7 @@ date: 2019-11-26
 categories: 技术
 tags: 技巧与报错总结
 comments: true
-toc: true
+pinned: true
 ---
 
 * **错误出现原因**：在更换开发环境中，由于更换了Tomcat版本，不知道是不是版本问题，导致网站内修改头像模块图片能上传至服务器，但读取时会返回404错误。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Tomcat访问webapp下目录静态资源报404的解决方法'
+title: 'Tomcat访问webapps下目录静态资源报404的解决方法'
 subtitle: '现象：页面访问服务器资源出现404报错'
 date: 2019-11-26
 categories: 技术

@@ -27,7 +27,9 @@ pinned: true
 
   * 将上述value值改为true，并在idea的Tomcat配置中勾选：
 
+    ~~~ 
     Deploy applications configured in Tomcat instance
+    ~~~
 
 ------
 

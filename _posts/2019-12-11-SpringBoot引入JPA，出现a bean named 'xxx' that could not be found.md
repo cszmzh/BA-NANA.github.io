@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'SpringBoot引入JPA，出现'
+title: 'SpringBoot引入JPA，出现a bean named 'xxx' that could not be found'
 subtitle: '在初次运行SpringBoot时出现该错误，下面是解决方法。'
-date: 2019-12-12
+date: 2019-12-11
 categories: 技术
 tags: 技巧与报错总结
 comments: true
@@ -10,6 +10,12 @@ toc: true
 ---
 
 
+
+* 具体错误
+
+  ~~~ 
+  a bean named 'entityManagerFactory' that could not be found
+  ~~~
 
 * 原因：maven中依赖导入的包可能和其他jar包冲突
 

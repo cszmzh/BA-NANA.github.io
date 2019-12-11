@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SpringBoot解决InvalidDataAccessApiUsageException'
-subtitle: '在SpringData写Repository进行单元测试时出现该错误，下面是网上查询到的解决办法。'
+subtitle: '在SpringData写Repository进行单元测试时出现该错误:Executing an update/delete query，下面是网上查询到的解决办法。'
 date: 2019-12-11
 categories: 技术
 tags: 技巧与报错总结
@@ -19,7 +19,7 @@ InvalidDataAccessApiUsageException: Executing an update/delete query
 
   
   
-  * 原因：没有处理事物
+  * 原因：执行update或delete语句时没有处理事物
   
   * 方法一：使用@Transactional注解
   

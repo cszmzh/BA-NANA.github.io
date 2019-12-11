@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Spring boot引入JPA，出现a bean named 'entityManagerFactory' that could not be found'
+title: 'SpringBoot引入JPA，出现a bean named 'entityManagerFactory' that could not be found'
 subtitle: '在初次运行SpringBoot时出现该错误，下面是解决方法。'
 date: 2019-12-11
 categories: 技术

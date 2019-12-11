@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SpringBoot出现'
+title: 'SpringBoot出现a bean named 'xxx' that could not be found'
 subtitle: '在初次运行SpringBoot时出现该错误，下面是解决方法。'
 date: 2019-12-11
 categories: 技术

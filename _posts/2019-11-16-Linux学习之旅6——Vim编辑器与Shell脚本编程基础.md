@@ -9,6 +9,21 @@ comments: true
 toc: true
 ---
 
+# 目录
+
+  * [一.Vim编辑器](#一vim编辑器)
+  * [二.Shell编程](#二shell编程)
+    * [1.第一个Shell脚本](#第一个shell脚本)
+    * [2.Shell变量](#shell变量)
+    * [3.Shell的数学运算](#shell的数学运算)
+    * [4.Shell的环境变量](#shell的环境变量)
+    * [5.Shell的参数变量](#shell的参数变量)
+    * [6.Shell的选择语句](#shell的选择语句)
+    * [7.Shell的条件测试](#shell的条件测试)
+    * [8.Shell函数](#shell函数)
+
+------
+
 
 
 ## 一.Vim编辑器

@@ -21,7 +21,7 @@ toc: true
 
 * 解决方法：
 
-  ~~~ java
+  ~~~ xml
   <dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -32,7 +32,7 @@ toc: true
 
   把上述version一栏去掉，变为
 
-  ~~~ java
+  ~~~ xml
   <dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-data-jpa</artifactId>

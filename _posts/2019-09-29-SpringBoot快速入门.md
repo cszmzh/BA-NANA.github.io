@@ -55,7 +55,7 @@ toc: true
 
 * PathVariable                 获取url中的数据
 
-  ~~~ 
+  ~~~ java
   // url:/say/100
   @GetMapping("/say/{id}")
       public String say(@PathVariable("id") Integer id){
@@ -64,12 +64,12 @@ toc: true
       }
   ~~~
 
-  ​
+  
 
 
 * RequestParam             获取请求参数的值
 
-  ~~~ 
+  ~~~ java
   // url:/say?id=100
   @GetMapping("/say")
   	//@RequestParam(value = "id", required = false, defaultValue = "0"）  非必须传值
@@ -85,7 +85,7 @@ toc: true
 
 * 引入依赖
 
-  ~~~ 
+  ~~~ xml
   <dependency>
               <groupId>org.springframework.boot</groupId>
               <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -111,11 +111,11 @@ toc: true
       show-sql: true
   ~~~
 
-  ​
+  
 
 * 事务
 
-  ~~~ 
+  ~~~ java
    //事务：指数据库事务，同时创建两个红包，保证两个都创建或都不创建
    //注意：数据库要改为InnoDB引擎
       @Transactional
@@ -132,5 +132,4 @@ toc: true
       }
   ~~~
 
-  ​
 

@@ -23,7 +23,7 @@ toc: true
 
 * console.log()                  写到游览器的控制台
 
-  ~~~ 
+  ~~~ javascript
   <p id="one"></p>
   	<script type="text/javascript">
   		
@@ -38,7 +38,7 @@ toc: true
   	</script>
   ~~~
 
-  ​
+  
 
 ### 2.js语句与注释
 
@@ -52,7 +52,7 @@ toc: true
 
 * 单行和多行注释
 
-  ~~~ 
+  ~~~ javascript
   //单行注释
 
   /**
@@ -72,7 +72,7 @@ toc: true
 
 * 数组（Array）
 
-  ~~~ 
+  ~~~ javascript
   //数组
   		var cars = new Array();   //此时cars数组长度为0，使用cars.length获取数组长度
   		cars[0]="abcd";           //此时cars数组长度为1，故js数组是动态变化的
@@ -85,7 +85,7 @@ toc: true
 
 * 对象（Object）
 
-  ~~~ 
+  ~~~ javascript
   //JavaScript对象
   		var person={
   			firstname:"Zach",
@@ -97,16 +97,16 @@ toc: true
   //person["firstname"] 这两种方法均可以取出值
   ~~~
 
-  ​
+  
 
 * 空（Null）
 
-  ~~~ 
+  ~~~ javascript
   var car="BWM";
   var car=null;	//用于清空变量
   ~~~
 
-  ​
+  
 
 * 未定义（Undefined）
 
@@ -126,7 +126,7 @@ toc: true
 
 * 匿名函数
 
-  ~~~ 
+  ~~~ javascript
   var c = function(cs1,cs2,cs3){
     console.log(cs1,cs2,cs3);
   }
@@ -135,7 +135,7 @@ toc: true
 
 * return
 
-  ~~~ 
+  ~~~ javascript
   function d(){
     return "this is return function";
   }
@@ -163,7 +163,7 @@ toc: true
 
 * innerHTML                             修改HTML元素
 
-  ~~~ 
+  ~~~ javascript
   var main = document.getElementById("intro");
   		main.innerHTML="helloworld";
   ~~~
@@ -172,7 +172,7 @@ toc: true
 
 * element.setAttribute()          设置属性值
 
-  ~~~ 
+  ~~~ javascript
   <div id="intro" data="nihao">123</div>
   ...
   var main = document.getElementById("intro");
@@ -184,7 +184,7 @@ toc: true
 
 * element.src                             修改图片
 
-  ~~~ 
+  ~~~ javascript
   <img src  = "1.jpg" id="image"/>
   ...
   var image = document.getElementById("image");
@@ -197,7 +197,7 @@ toc: true
 
 ### 3.修改CSS样式
 
-~~~ 
+~~~ javascript
 <div id="main">helloworld</div>
 	<script type="text/javascript">
 		var main = document.getElementById("main");
@@ -209,15 +209,15 @@ toc: true
 
 ### 4.DOM事件触发
 
-* \<h1 onclick="...">点击该文本</h1>
+* \<h1 onclick="...">点击该文本<//h1>
 
-  ~~~ 
+  ~~~ html
   <div onClick="alert('helloworld')">按钮</div>
   ~~~
 
 * element.onclick=function(){...}
 
-  ~~~ 
+  ~~~ javascript
   var main = document.getElementById("main");
   		main.onclick=function(){
   			alert("main被触发了");
@@ -226,7 +226,7 @@ toc: true
 
 * element.addEventListener("click",function() {...}  )
 
-  ~~~ 
+  ~~~ javascript
   var btn = document.getElementById("btn");
   			btn.addEventListener("click",function(){
   				alert("btn被触发了");
@@ -247,7 +247,7 @@ toc: true
 
 * parent.removeChild(child)
 
-  ~~~ 
+  ~~~ javascript
   <div id="div1">
   		<p id="p1">我是第一个p</p>
   		<p id="p2">我是第二个p</p>
@@ -279,7 +279,7 @@ toc: true
 
 * window.resizeTo() -调整当前窗口尺寸
 
-  ~~~ 
+  ~~~ javascript
   <button onClick="openwindow()">创建窗口</button>
   	<button onClick="myFunction()">调整窗口</button>
   	<button onClick="moveFunction()">调整窗口</button>

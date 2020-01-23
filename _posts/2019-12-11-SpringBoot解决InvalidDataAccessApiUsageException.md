@@ -13,7 +13,7 @@ toc: true
 
 * 出现Executing an update/delete query
 
-  ~~~ 
+  ~~~ java
 InvalidDataAccessApiUsageException: Executing an update/delete query
   ~~~
 
@@ -23,11 +23,11 @@ InvalidDataAccessApiUsageException: Executing an update/delete query
   
   * 方法一：使用@Transactional注解
   
-  ~~~ 
+  ~~~ java
     @Modifying
         @Transactional
         @Query("update Wishes set wishStatus=:wishStatus where wishId=:wishId")
         int updateWishStatus(@Param("wishId")Integer wishId, @Param("wishStatus")Integer wishStatus);
-    ~~~
+  ~~~
   
   * 方法二：使用AOP声明式事务

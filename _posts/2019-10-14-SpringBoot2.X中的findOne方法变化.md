@@ -13,7 +13,7 @@ pinned: true
 
 * SpringBoot在1.5.X版本中，可以使用以下方法通过id查询
 
-  ~~~ 
+  ~~~ java
   repository.findOne(id);
   ~~~
 
@@ -21,7 +21,7 @@ pinned: true
 
   `<S extends T> Optional<S> findOne(Example<S> var1);`
 
-  ​
+  
 
 * 解决方法：
 
@@ -29,10 +29,10 @@ pinned: true
 
   2.在2.X版本中用以下写法
 
-  ```
-  <!--写法1-->
+  ```java
+  //写法1
   repository.findById(id).get();
-  <!--写法2-->
+  //写法2
   repository.findById(id).orElse(null);
   ```
 

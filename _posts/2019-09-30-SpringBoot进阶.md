@@ -15,14 +15,14 @@ toc: true
 
 * 实体类
 
-  ~~~ 
+  ~~~ java
   @Min(value = 18, message = "未成年少女禁止入内")
       private Integer age;
   ~~~
 
 * 控制器类
 
-  ~~~ 
+  ~~~ java
   /**
        * 添加一个女生
        * @return
@@ -41,7 +41,7 @@ toc: true
       }
   ~~~
 
-  ​
+  
 
 ## 二.使用AOP处理请求
 
@@ -55,7 +55,7 @@ toc: true
   | ..*             | 当前包及子包的所有类                 |
   | .*(..)          | 表示任何方法名，括号表示参数，两个点表示任何参数类型 |
 
-  ~~~ 
+  ~~~ java
   //例子
   @Aspect
   @Component
@@ -69,7 +69,7 @@ toc: true
 
 * 日志处理
 
-  ~~~ 
+  ~~~ java
   @Aspect
   @Component
   public class HttpAspect {
@@ -118,7 +118,7 @@ toc: true
 
 * 测试Service
 
-  ~~~ 
+  ~~~ java
   @RunWith(SpringRunner.class)
 
     @SpringBootTest
@@ -138,7 +138,7 @@ toc: true
 
 * 测试API
 
-  ~~~ 
+  ~~~ java
       @RunWith(SpringRunner.class)
       
       @SpringBootTest

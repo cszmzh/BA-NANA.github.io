@@ -15,7 +15,7 @@ toc: true
 
   * 在Tomcat目录/conf/web.xml中修改参数：
 
-    ~~~ 
+    ~~~ xml
     <init-param>
     
     <param-name>listings</param-name>

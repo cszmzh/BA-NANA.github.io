@@ -44,7 +44,7 @@ toc: true
 
   * @RepositoryDefinition注解
 
-    ~~~ 
+    ~~~ java
     <!--添加注解达到extends Repository的功能-->
     @RepositoryDefinition(domainClass = 实体类文件名(不要忘记后缀.class), idClass = Integer.class)
     <!--idClass中的Integer为主键类型，按照实际情况修改-->
@@ -70,7 +70,7 @@ toc: true
 
   ![Repository命名规范](../../../assets/img/Repository命名规范.png)
 
-  ​
+  
 
   * 缺点：1.方法名较长      2.对于复杂的查询难以实现
 
@@ -86,7 +86,7 @@ toc: true
 
 * 本地查询
 
-  ~~~ 
+  ~~~ java
   @Query("select o from Users o where id=(select max(id) from Users tb_name)")
   public Users getUserById();	//例子：用自定义的命名规则查最大Id用户
 
@@ -106,7 +106,7 @@ toc: true
   public long getCount();		//例子：原生查询总数
   ~~~
 
-  ​
+  
 
 ### 更新及删除操作整合事务的使用
 
@@ -122,7 +122,7 @@ toc: true
 
   Service层：
 
-  ~~~ 
+  ~~~ java
   @Service
   public class Service{
     
@@ -138,7 +138,7 @@ toc: true
 
   repository:
 
-  ~~~ 
+  ~~~ java
   @Modifying
   Query("update Users o set o.age=:age where o.id=:id")
   public void update(@Param("id")Integer id, @Param("age")Integer age);
@@ -162,7 +162,7 @@ toc: true
 
 * 带排序的**分页查询：findAll(Pageable pageable)**
 
-  ~~~ 
+  ~~~ java
   /**代码举例，假设数据库中有100条数据*/
   //注意：此处Pageable在org.springframework.data.domain中
   Pageable pageable = new PageRequest(0,5);
@@ -189,7 +189,7 @@ toc: true
 
 * **排序查询：findAll(Sort sort)**
 
-  ~~~
+  ~~~java
   /**代码举例，假设数据库中有100条数据*/
   Sort.Order order1 = new Sort.Order(Sort.Direction.DESC, "id"); 	//Id降序排列
   Sort.Order order2 = new Sort.Order(Sort.Direction.ASC, "id"); 	//Id升序排列
@@ -199,7 +199,7 @@ toc: true
 
   ~~~
 
-  ​
+  
 
 ### JpaRepository接口的使用
 
@@ -213,14 +213,14 @@ toc: true
 
 * 代码举例
 
-  ~~~
+  ~~~java
   Users user = repository.findOne(1);	//传入Id
 
   System.out.println("userId=5是否存在：" + repository.exists(5));	//判断id是否存在
 
   ~~~
 
-  ​
+  
 
 ### JpaSpecificationExecutor接口的使用
 
@@ -228,7 +228,7 @@ toc: true
 
 * extends  JpaSpecificationExecutor\<T>
 
-  ~~~ 
+  ~~~ java
   /**代码举例*/
 
   /**
@@ -252,7 +252,5 @@ toc: true
   };
 
   ~~~
-
-
 
 

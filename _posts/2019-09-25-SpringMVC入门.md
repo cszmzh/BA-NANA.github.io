@@ -42,7 +42,7 @@ toc: true
 
   8.ViewResolver：视图解析器
 
-  ​
+  
 
 * 实现流程
 
@@ -71,7 +71,7 @@ toc: true
 
 * 导入jar包
 
-  ~~~ 
+  ~~~ xml
   <!--导入springMvc需要的jar-->
       <dependency>
         <groupId>org.springframework</groupId>
@@ -82,7 +82,7 @@ toc: true
 
 * web.xml中配置前置控制器
 
-  ~~~ 
+  ~~~ xml
   <servlet>
       <servlet-name>SpringMVC</servlet-name>
       <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -100,7 +100,7 @@ toc: true
 
 * MyHandler类
 
-  ~~~ 
+  ~~~ java
   public class MyHandler implements Controller {
       @Override
       public ModelAndView handleRequest(javax.servlet.http.HttpServletRequest httpServletRequest, javax.servlet.http.HttpServletResponse httpServletResponse) throws Exception {
@@ -115,14 +115,14 @@ toc: true
   }
   ~~~
 
-  ​
+  
 
 
 * XML配置Controller，HandlerMapping组件映射
 
 * XML配置ViewResolver组件映射
 
-  ~~~ 
+  ~~~ xml
   <!--在resources下springmvc.xml中的配置-->
   <!--配置HandlerMapping,将url请求映射到Handler-->
       <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
@@ -147,7 +147,7 @@ toc: true
       </bean>
   ~~~
 
-  ​
+  
 
 ### 2.基于注解配置
 
@@ -155,7 +155,7 @@ toc: true
 
 * Controller，HandlerMapping通过注解进行映射
 
-  ~~~ 
+  ~~~ java
   @Controller
   public class AnnotationHandler {
 
@@ -197,7 +197,7 @@ toc: true
   }
   ~~~
 
-  ​
+  
 
 * XML配置ViewResolver组件映射
 
@@ -221,7 +221,7 @@ toc: true
 
 controller类：
 
-~~~ 
+~~~ java
 @Controller
 public class DataBindController {
 
@@ -312,3 +312,4 @@ public class DataBindController {
   * 统一了客户端访问资源的接口
   * url更简洁，易于理解，便与拓展
   * 有利于不同系统之间的资源共享
+

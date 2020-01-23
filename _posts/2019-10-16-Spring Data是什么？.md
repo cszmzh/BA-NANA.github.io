@@ -5,6 +5,7 @@ subtitle: '这个优秀的持久层解决方案使得我们访问数据库变得
 date: 2019-10-16
 categories: 技术
 tags: 后端 Spring家族
+cover: 'https://ba-nana.github.io/assets/img/background-picture/Spring Data是什么？.png'
 comments: true
 toc: true
 ---

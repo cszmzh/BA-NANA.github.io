@@ -47,7 +47,6 @@
       <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
       <div id="gitalk-container"></div>
-      <script src="{{ site.baseurl }}/js/md5.min.js"></script>
       <script type="text/javascript">
         var gitalk = new Gitalk({
 
@@ -57,7 +56,7 @@
           repo: 'BA-NANA.github.io',
           owner: 'BA-NANA',
           admin: ['BA-NANA'],
-          id: md5(window.location.pathname),
+          id: window.location.pathname,
 
         });
         gitalk.render('gitalk-container');

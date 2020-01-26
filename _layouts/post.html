@@ -43,8 +43,8 @@
       <!--评论插件-->
       <!-- Gitalk 评论 start  -->
       <!-- Link Gitalk 的支持文件  -->
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-      <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+      <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
       <div id="gitalk-container"></div>
       <script type="text/javascript">
@@ -56,7 +56,7 @@
           repo: 'BA-NANA.github.io',
           owner: 'BA-NANA',
           admin: ['BA-NANA'],
-          id: window.location.pathname,
+          id: decodeURI(location.pathname), // Ensure uniqueness and length less than 50,
 
         });
         gitalk.render('gitalk-container');

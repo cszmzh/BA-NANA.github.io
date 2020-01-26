@@ -57,7 +57,7 @@
           repo: 'BA-NANA.github.io',
           owner: 'BA-NANA',
           admin: ['BA-NANA'],
-          id: md5(location.href),
+          id: md5(window.location.pathname),
 
         });
         gitalk.render('gitalk-container');

@@ -483,6 +483,7 @@
 }
 .gt-container .gt-comment-body {
     color: #333 !important;
+    padding-right: 15%;
 }
 .gt-container .gt-comment-admin .gt-comment-content {
     background-color: #f6f9fe;

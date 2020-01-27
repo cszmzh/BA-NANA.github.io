@@ -199,6 +199,7 @@
 .markdown-body pre {
   font-family: monospace, monospace;
   font-size: 1em;
+  overflow: auto;
 }
 
 .markdown-body hr {

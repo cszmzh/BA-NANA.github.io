@@ -428,6 +428,7 @@
     overflow: auto;
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
+    border-radius: 10px;
 }
 .gt-container .gt-comment-content:hover {
     -webkit-box-shadow: 0 0.625em 3.75em 0 #f4f4f4;

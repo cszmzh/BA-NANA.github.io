@@ -16,8 +16,8 @@ baseurl: ''
 
 # Navigation links
 nav:
-  home: '/'
-  tags: '/tags.html'
+  首页: '/'
+  归档: '/tags.html'
 
 # Footer
 footer:

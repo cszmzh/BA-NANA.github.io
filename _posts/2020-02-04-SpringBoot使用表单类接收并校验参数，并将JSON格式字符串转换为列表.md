@@ -116,7 +116,7 @@ toc: true
   orderDTO.setOrderDetailList(orderDetailList);
   ~~~
 
-* 以上就是要和大家分享的内容啦，利用表单类接收并处理复杂、繁多的接收参数，可以使得编码中的Controller层更简洁，代码更清晰。除了上文提到的校验注解，还有一些常用的SpringBoot校验注解
+* 以上就是要和大家分享的内容啦，利用表单类接收并处理复杂、繁多的接收参数，可以使得编码中的Controller层更简洁，代码更清晰。除了上文提到的校验注解，还有一些常用的SpringBoot校验注解：[点击这里](https://ba-nana.github.io/2020/02/04/SpringBoot%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%A1%E9%AA%8C%E6%B3%A8%E8%A7%A3.html)
 
 ------
 

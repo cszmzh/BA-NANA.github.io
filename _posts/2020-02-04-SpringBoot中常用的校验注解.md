@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 'SpringBoot中常用的校验注解'
-subtitle: '该一般用于表单类中'
+subtitle: '可使用这些注解快速校验接收参数是否符合设定的需求。'
 date: 2020-02-04
 categories: 技术
-tags: 报错与技巧总结 Spring家族
+tags: Spring家族
 comments: true
 toc: true
 ---
-
-
 
 * 常用的校验注解，用于表单实体类成员上方
 
@@ -34,6 +32,13 @@ toc: true
   | @Email(regexp=正则表达式,flag=标志的模式)    | CharSequence子类型（如String）                               | 验证注解的元素值是Email，也可以通过regexp和flag指定自定义的email格式 |
   | @Pattern(regexp=正则表达式,flag=标志的模式)  | String，任何CharSequence的子类型                             | 验证注解的元素值与指定的正则表达式匹配                       |
   | @Valid                                       | 任何非原子类型                                               | 指定递归验证关联的对象；如用户对象中有个地址对象属性，如果想在验证用户对象时一起验证地址对象的话，在地址对象上加@Valid注解即可级联验证 |
+
+* 所有注解均可使用message参数传递提示信息，如：
+
+  ~~~java
+  @Range(min=18, max=60, message="年龄要求18岁到60岁之间")
+  private Integer age;
+  ~~~
 
 ------
 

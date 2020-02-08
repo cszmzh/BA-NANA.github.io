@@ -4,7 +4,7 @@ title: 'SpringBoot使用表单类接收并校验参数，并将JSON格式字符�
 subtitle: '当前端传递多种参数到后端时，为了简化Controller层，可以使用这种方法。除此之外，本文还向大家介绍如何将前端传来的JSON格式字符串转换为我们需要的数据。'
 date: 2020-02-04
 categories: 技术
-tags: 报错与技巧总结 Spring家族
+tags: 技巧与报错总结 Spring家族
 comments: true
 toc: true
 ---

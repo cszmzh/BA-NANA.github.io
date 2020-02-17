@@ -15,6 +15,7 @@ layout: default
         <li>
             {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
+            {% print(tag) %}
             <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
             {% endfor %}
             {% endif %}

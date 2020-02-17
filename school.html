@@ -12,6 +12,10 @@ layout: default
 <main class="tags-content">
 
     <!--配置显示的标签-->
+    {% with distance=5 %}
+    {{distance}}
+    {% endwith %}
+
     <ul class="tags-list">
         <li>
             {% if site.recommend-tags and site.tags.size>0 %}

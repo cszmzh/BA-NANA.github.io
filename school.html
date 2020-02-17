@@ -15,7 +15,7 @@ layout: default
         <li>
             {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
-                {% if tag[0] = '学校课程' %}
+                {% if tag[0]  %}
                     <a href="#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
                 {% endif %}
             {% endfor %}
@@ -23,7 +23,7 @@ layout: default
         </li>
 
         {% for tag in site.tags %}
-        {% if tag[0] = '学校课程' %}
+        {% if tag[0]  %}
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
             {% for post in tag[1] %}

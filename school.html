@@ -18,14 +18,14 @@ layout: default
             {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
 
-                {% if tag[0] in ['学校课程','通管概论'] %}
+                {% if 'a' in 'a' %}
                     <a href="#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
             {% endfor %}
             {% endif %}
         </li>
 
         {% for tag in site.tags %}
-        {% if tag[0] in ['学校课程','通管概论'] %}
+        {% if 'a' in 'a' %}
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
             {% for post in tag[1] %}

@@ -20,7 +20,6 @@ layout: default
 
                 {% if tag[0] in ['学校课程','通管概论'] %}
                     <a href="#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
-                {% endif %}
             {% endfor %}
             {% endif %}
         </li>
@@ -33,7 +32,6 @@ layout: default
             <a class="tag-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
-        {% endif %}
         {% endfor%}
     </ul>
 

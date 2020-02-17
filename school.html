@@ -13,12 +13,13 @@ layout: default
 
     <!--配置显示的标签-->
     {% with tag_list=['学校课程','通管概论'] %}
+    {% endwith %}
 
     <ul class="tags-list">
         <li>
             {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
-                {% if tag[0] in tag_list %}
+                {% if tag[0]=='学校课程' %}
                     <a href="#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
                 {% endif %}
             {% endfor %}
@@ -26,7 +27,7 @@ layout: default
         </li>
 
         {% for tag in site.tags %}
-        {% if tag[0] in tag_list %}
+        {% if tag[0]=='学校课程' %}
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
             {% for post in tag[1] %}
@@ -37,7 +38,7 @@ layout: default
         {% endfor%}
     </ul>
 
-    {% endwith %}
+
 </main>
     
 {% include footer.html %}

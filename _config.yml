@@ -28,7 +28,7 @@ footer:
 author: '张同学'
 nickname: '香蕉'
 bio: '一个啥也不懂的大学生'
-avatar: '/assets/img/head.jpg'
+avatar: 'https://cdn.jsdelivr.net/gh/BA-NANA/ba-nana.github.io@1.0/assets/img/head.jpg'
 
 # Search
 search: true

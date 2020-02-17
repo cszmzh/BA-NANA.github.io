@@ -18,7 +18,7 @@ baseurl: ''
 nav:
   首页: '/'
   归档: '/tags.html'
-  学校: '/school.html'
+  学校课程: '/school.html'
 
 # Footer
 footer:

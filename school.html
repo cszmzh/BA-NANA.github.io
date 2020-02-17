@@ -18,7 +18,7 @@ layout: default
             {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
 
-                {% if 'a' in 'a' %}
+                {% if tag[0]=='通管概论' or tag[0]=='学校课程' %}
                     <a href="#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
                 {% endif %}
             {% endfor %}

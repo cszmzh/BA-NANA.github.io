@@ -18,7 +18,7 @@ baseurl: ''
 nav:
   首页: '/'
   归档: '/tags.html'
-  相册: '/test.html'
+  相册: '/album.html'
   停课不停学: '/school.html'
 
 # Footer

@@ -4,8 +4,7 @@ layout: default
 ---
 
 <html lang="en">
-<head>
-
+<header class="g-header">
     <div class="g-logo">
         <a href="{{ "/" | relative_url }}"></a>
     </div>
@@ -17,6 +16,8 @@ layout: default
             {% endfor %}
         </ul>
     </nav>
+</header>
+<head>
 
     <meta charset="utf-8">
     <meta name="generator" content="Hexo 4.2.0">
@@ -104,6 +105,14 @@ layout: default
     <script src="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v2.1.8/js/globalUtils.js"></script>
 </head>
 
+
+
+<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}" style=" background: url(https://cdn.jsdelivr.net/gh/BA-NANA/ba-nana.github.io@1.0/assets/img/school.jpg) no-repeat center center; background-size: cover;" >
+    <h2>高清美图</h2>
+</div>
+
+
+<main>
 <div class="container">
     <div class="columns">
         <div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen">
@@ -368,5 +377,6 @@ layout: default
         </div>
     </div>
 </div>
+</main>
 
 {% include footer.html %}

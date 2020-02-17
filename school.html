@@ -18,26 +18,21 @@ layout: default
             {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
 
-                {% for item in ['学校课程','通管概论'] %}
-                    {% ifequal item var %}
+                {% if tag[0] in ['学校课程','通管概论'] %}
                     <a href="#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
-                    {% endifequel %}
-                {% endfor %}
             {% endfor %}
             {% endif %}
         </li>
 
         {% for tag in site.tags %}
-        {% for item in ['学校课程','通管概论'] %}
-        {% ifequal item var %}
+        {% if tag[0] in ['学校课程','通管概论'] %}
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
             {% for post in tag[1] %}
             <a class="tag-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
-        {% endifequel %}
-        {% endfor %}
+        {% endif %}
         {% endfor%}
     </ul>
 

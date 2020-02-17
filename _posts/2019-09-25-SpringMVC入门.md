@@ -5,7 +5,7 @@ subtitle: '后端必学框架'
 date: 2019-09-25
 categories: 技术
 tags: 后端 Spring家族
-cover: '../assets/img/background-picture/SpringMVC入门.png'
+cover: 'https://cdn.jsdelivr.net/gh/BA-NANA/ba-nana.github.io@1.0/assets/img/background-picture/SpringMVC入门.png'
 comments: true
 toc: true
 ---

@@ -5,7 +5,7 @@ subtitle: '继Linux学习之旅5，下面学习Linux中常用的编辑器——V
 date: 2019-11-16
 categories: 技术
 tags: Linux
-cover: '../assets/img/background-picture/Linux学习之旅/Linux6.png'
+cover: 'https://cdn.jsdelivr.net/gh/BA-NANA/ba-nana.github.io@1.0/assets/img/background-picture/Linux学习之旅/Linux6.png'
 comments: true
 toc: true
 ---

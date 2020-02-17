@@ -5,7 +5,7 @@ subtitle: '前后端必备知识'
 date: 2019-09-10
 categories: 技术
 tags: 前端 JavaScript
-cover: '../assets/img/background-picture/JavaScript入门.png'
+cover: 'https://cdn.jsdelivr.net/gh/BA-NANA/ba-nana.github.io@1.0/assets/img/background-picture/JavaScript入门.png'
 comments: true
 toc: true
 ---

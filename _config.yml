@@ -18,7 +18,7 @@ baseurl: ''
 nav:
   首页: '/'
   归档: '/tags.html'
-  相册: '/album.html'
+  信息门户: 'http://authserver.tjut.edu.cn/authserver/login?service=http%3A%2F%2Fehall.tjut.edu.cn%2Fnew%2Findex.html'
   停课不停学: '/school.html'
 
 # Footer

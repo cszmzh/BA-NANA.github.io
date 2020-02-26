@@ -3419,7 +3419,7 @@ Prism.hooks.add('wrap', function(env) {
 		function registerClipboard() {
 			var clip = new ClipboardJS(linkCopy, {
 				'text': function () {
-					return env.code + '\n\n著作权归作者所有。\n商业转载请联系作者获得授权,非商业转载请注明出处。\n原文: '+location.href;
+					return env.code + '\n\n著作权归作者所有。\n商业转载请联系作者获得授权,非商业转载请注明出处:张同学的博客。\n原文: '+location.href;
 				}
 			});
 

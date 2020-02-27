@@ -30,6 +30,9 @@
     <div class="filter"></div>
       <div class="post-cover" style="background: url('{{ page.cover | relative_url }}') center no-repeat; background-size: cover;"></div>
     {% endif %}
+
+    <link href="https://cdn.jsdelivr.net/gh/itlangzi/toc-helper@1.1.1/css/toc-helper.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/itlangzi/toc-helper@1.1.1/js/toc-helper.min.js"></script>
   </header>
 
   <div class="post-content visible">
@@ -37,7 +40,9 @@
     <h2 class="post-subtitle">{{ page.subtitle }}</h2>
     {% endif %}
 
-    <article class="markdown-body">
+
+    <article class="markdown-body" data-toc="#toc">
+      <div id="toc"> </div>
       {{ page.content }}
 
       <!--评论插件-->
